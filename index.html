@@ -6,22 +6,38 @@ THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
  
  
 Authors in chronological order of contribution:
+
+Ashley Mascorro 
+Author 1 
+comment: author name added
+
 Tim Riedel
 Author 2
  
 Further Information:
 http://diystream.cns.utexas.edu/
 
+Source Credited with health information: 
+https://hcamidwest.com/blog/entry/broken-bone-or-sprain
+
 Research Educator:
 Timothy Riedel
 triedel@utexas.edu
+
+Student Researcher: 
+Ashley Mascorro 
+ashleymascorro@utexas.edu
+Comment: author added with contact info 
  
-Brief Description of Goal of Code:
-blah, blah, blah,
+Brief Description of Goal of Code: to help the user determine if the have a sprain or bone fracture post-injury. 
  
 Known Issues:
-blah, blah, blah, blah
-Ignore this error message if you see it using the javaScript console: Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'interest-cohort'.
+v.1: question 1 runs well and recieves input from yes and no buttons. Question 2 added
+v.2: question 2 yes and no buttons unresponsive, content loads but does not allow advancement to page 3 
+v.3: page command updated to allow app to proceed through all 4 questions asked, results page not properly displaying
+v.4: question buttons updated from html to java for accurate counting
+v.5: reults page still unresponsive to results entry
+v.6: results calcultion updated to corellate with script code at beginning, results still not responsive
 
 References:
 https://www.w3schools.com/w3css/default.asp
@@ -37,8 +53,37 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 </head> 
 
 <script>
+	
+        var sprain_count = 0;
+        var fracture_count = 0;
 
-	//YOUR JAVASCRIPT GOES HERE
+
+        function sprainAdd(){
+            sprain_count = sprain_count + 1;
+		/* function to keep count of sprain response on survey*/
+
+        }
+
+        function fractureAdd(){
+            fracture_count = fracture_count + 1;
+		/*function to count fracture responses on survery*/
+		/* add second alert to relfecton survey*/
+        }
+	
+	
+	function computeResults(){ 
+	         var sprainPercent = (sprain_count/4)*100;
+	         /* created equation for sprain percentage calculation*/
+	         var fracturePercent = (fracture_count/4)*100;
+	        /* euation created for fracture percentage calculation*/
+	         var resultText = document.getElementById("lastPage");
+	       /* calculation and result display function added*/
+	       /* function created for resultsto be displayed on last page of site*/
+	     resultText.innerHTML = "Probability of sprain = " + sprainPercent + % + <br> Probability of fracture = " + fracturePercent + "%";
+	}
+		
+
+  </script>
 
 </script>	
 
