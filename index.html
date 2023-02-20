@@ -110,8 +110,90 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <body>
 	
-	<!-- HERE IS WHERE ALL OF YOUR HTML PAGES GO -->
-	REPLACE THIS TEXT
+	<div id="header" class="w3-container w3-flat-carrot">
+	<h1>Sprain or Fracture?</h1>
+</div>
+	
+<div id="content" class="w3-container">
+	<p>Unsure if you may have a sprain or fracture after an injury?. Answer a few short questions to find out!</p>
+	
+	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>
+	
+	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
+ 	
+	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
+
+<div class="page" id="one">
+	<div id="header" class="w3-container w3-flat-carrot">
+		<h1>Question 1</h1>
+	</div>
+	
+    	<div id="content" class="w3-container">
+        <p>Can you apply weight or pressure to the affected limb?</p>   
+		  
+	<a href="#two"  onclick="sprainAdd();" class="w3-btn w3-black"> Yes</a>
+         <a href="#two"  onclick="fractureAdd();" class="w3-btn w3-black">No</a>
+ </div><! created question one / added buttons -->
+
+
+<div class="page" id="two">
+	<div id="header" class="w3-container w3-flat-carrot">
+		<h1>Question 2</h1>
+	</div>
+	
+	<div id="content" class="w3-container">
+	<p>Is the affected area deformed/ bones have broken through the skin?</p>
+		
+		  
+	<a href="#three"  onclick="sprainAdd();" class="w3-btn w3-black"> Yes</a>
+         <a href="#three"  onclick="fractureAdd();" class="w3-btn w3-black">No</a>
+ </div><!created question two /added buttons -->
+</div>	
+	
+<div class="page" id="three">
+	<div class="w3-container w3-flat-carrot">
+		<h1>Question 3</h1>
+	</div>
+	
+	<div id="content" class="w3-container">
+		<p>Does the affected site have range of motion?</p>
+		
+	<a href="#four"  onclick="sprainAdd();" class="w3-btn w3-black"> Yes</a>
+        <a href="#four"  onclick="fractureAdd();" class="w3-btn w3-black">No</a>
+ </div><created question three /buttons added -->
+	</div>
+</div>	
+	
+<div class="page" id="four">
+	<div class="w3-container w3-flat-carrot">
+		<h1>Question 4</h1>
+	</div>
+	
+	<div id="content" class="w3-container">
+		<p>Did the injured limb "crack" during the incident?</p>
+		
+		  
+	<a href="#five"  onclick="sprainAdd();" class="w3-btn w3-black"> Yes</a>
+         <a href="#five"  onclick="fractureAdd();" class="w3-btn w3-black">No</a>
+ </div><question four added /buttons created -->
+	</div>
+</div>	
+	
+<div class="page" id="five">
+	<div class="w3-container w3-flat-carrot">
+		<h1>Results</h1>
+		<!--"results" page added to reflect sprain or fracture result-->
+	</div>
+		
+		<p id="lastPage></p>
+	<!--"last page" added to proceed command -->
+	
+	<div id="content" class="w3-container">
+		<p>Please click on the results button below to get your results</p>
+	<!-- changed "below are your results" to "please click "results" button below to get your results"-->											  
+	<a href="#five" onclick="computeResults();" class="w3-btn w3-black">Results</a>
+	<!-- created button command to display results-->
+ 
 	
 </body>
 </html>
