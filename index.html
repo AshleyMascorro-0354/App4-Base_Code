@@ -76,10 +76,10 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	         /* created equation for sprain percentage calculation*/
 	         var fracturePercent = (fracture_count/4)*100;
 	        /* euation created for fracture percentage calculation*/
-	         var resultText = document.getElementById("lastPage");
+	         var resultText = document.getElementById("RESULTS");
 	       /* calculation and result display function added*/
 	       /* function created for resultsto be displayed on last page of site*/
-	     resultText.innerHTML = "Probability of sprain = " + sprainPercent + % + <br> Probability of fracture = " + fracturePercent + "%";
+	     resultText.innerHTML = "Probability of sprain = " + sprainPercent + "<br>Probability of fracture = " + fracturePercent;
 	}
 
 </script>	
@@ -187,20 +187,25 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 </div>	
 	
-<div class="page" id="five">
+<div class="page" id="five"> <!--Changed id to seven-->
 	<div class="w3-container w3-flat-carrot">
 		<h1>Results</h1>
 		<!--"results" page added to reflect sprain or fracture result-->
 	</div>
 		
-		<p id="lastPage></p>
-	<!--"last page" added to proceed command -->
+		
+	<!--"last page" added to proceed command-->
+	<!--Get rid of ending div here-->
 	
 	<div id="content" class="w3-container">
 		<p>Please click on the results button below to get your results</p>
 	<!-- changed "below are your results" to "please click "results" button below to get your results"-->											  
-	<a href="#five" onclick="computeResults();" class="w3-btn w3-black">Results</a>
+	<a class="w3-btn w3-black" onclick="computeResults();"> Results</a> <!--Got rid of unnecessary href-->
+	<p id="RESULTS" ></p> <!--Display results in text-->
 	<!-- created button command to display results-->
+ 
+	</div>
+</div>		
  
 	
 </body>
