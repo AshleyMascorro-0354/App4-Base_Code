@@ -81,6 +81,14 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	       /* function created for resultsto be displayed on last page of site*/
 	     resultText.innerHTML = "Probability of sprain = " + sprainPercent + "<br>Probability of fracture = " + fracturePercent;
 	}
+	
+	function image() {
+		var b_canvas = document.getElementById("a"); 
+		//code to add image to canvas
+		var b_contect = b_canvas.getContext("2d");
+		var img = document.getElementById("rectcat"); 
+		b_context.drawImage(img,10,20); 
+		//position of image
 
 </script>	
 
@@ -118,9 +126,10 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<p>Unsure if you may have a sprain or fracture after an injury?. Answer a few short questions to find out!</p>
 	
 	<style>
-       	<img, src="https://www.alamy.com/injured-stick-figure-with-broken-bones-and-head-pain-in-black-on-white-background-image465478254.html" alt= "broken stick figure">
-            	max-height:90%;
-        		max-width:90%;
+       	<p>Image to use:</p>
+	<img id="rectcat" src="https://freepngimg.com/download/painting/84774-square-art-pixel-rectangle-cat-hd-image-free-png.png"
+	<!--/image added to load on first page
+            	
         	}
 </style>
 
@@ -153,8 +162,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<p>Is the affected area deformed/ bones have broken through the skin?</p>
 		
 		  
-	<a href="#three"  onclick="sprainAdd();" class="w3-btn w3-black"> Yes</a>
-         <a href="#three"  onclick="fractureAdd();" class="w3-btn w3-black">No</a>
+	<a href="#three"  onclick="sprainAdd();" class="w3-btn w3-black"> No</a>
+         <a href="#three"  onclick="fractureAdd();" class="w3-btn w3-black"> Yes</a>
  </div><!created question two /added buttons -->
 </div>	
 	
@@ -167,7 +176,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<p>Does the affected site have range of motion?</p>
 		
 	<a href="#four"  onclick="sprainAdd();" class="w3-btn w3-black"> Yes</a>
-        <a href="#four"  onclick="fractureAdd();" class="w3-btn w3-black">No</a>
+        <a href="#four"  onclick="fractureAdd();" class="w3-btn w3-black"> No</a>
  </div><created question three /buttons added -->
 	</div>
 </div>	
@@ -181,8 +190,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<p>Did the injured limb "crack" during the incident?</p>
 		
 		  
-	<a href="#five"  onclick="sprainAdd();" class="w3-btn w3-black"> Yes</a>
-         <a href="#five"  onclick="fractureAdd();" class="w3-btn w3-black">No</a>
+	<a href="#five"  onclick="sprainAdd();" class="w3-btn w3-black"> No</a>
+         <a href="#five"  onclick="fractureAdd();" class="w3-btn w3-black"> Yes</a>
  </div><question four added /buttons created -->
 	</div>
 </div>	
